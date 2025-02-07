@@ -15,8 +15,8 @@ const Steps = () => {
           <div>
             <p className="text-xl font-medium">Upload Image</p>
             <p className="text-sm text-neutral-500 mt-1">
-              This is a demo text, will replace it later. <br /> This is a
-              demo..
+              Choose an image to upload and get started. <br /> Quick and simple
+              process.
             </p>
           </div>
         </div>
@@ -25,8 +25,8 @@ const Steps = () => {
           <div>
             <p className="text-xl font-medium">Remove background</p>
             <p className="text-sm text-neutral-500 mt-1">
-              This is a demo text, will replace it later. <br /> This is a
-              demo..
+              Our tool will remove the background. <br /> Clean and precise
+              results.
             </p>
           </div>
         </div>
@@ -35,8 +35,8 @@ const Steps = () => {
           <div>
             <p className="text-xl font-medium">Download image</p>
             <p className="text-sm text-neutral-500 mt-1">
-              This is a demo text, will replace it later. <br /> This is a
-              demo..
+              Download your processed image instantly. <br /> High-quality and
+              ready to use anywhere.
             </p>
           </div>
         </div>

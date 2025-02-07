@@ -15,10 +15,11 @@ const Header = () => {
           from <br className="max-md:hidden" /> images for free.
         </h1>
         <p className="my-6 text-[15px] text-gray-500">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          Unleash the true focus of your images - no distractions, just
+          perfection.
           <br className="max-sm:hidden" />
-          Lorem Ipsum has been the industry's standard dummy text ever.
+          Remove backgrounds effortlessly and let your subjects shine with
+          clarity and precision.
         </p>
 
         <div>
