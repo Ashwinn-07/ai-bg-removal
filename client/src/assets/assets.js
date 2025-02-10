@@ -36,14 +36,14 @@ export const assets = {
 export const testimonialsData = [
   {
     id: 1,
-    text: "I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.",
+    text: "I've been using Eraseify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.",
     author: "Richard Nelson",
     image: profile_img_1,
     jobTitle: "Web Developer",
   },
   {
     id: 2,
-    text: "I've been using bg.removal for nearly 6 months, The quality is top-notch. My friend Myztic is an exceptional developer with incredible talent and dedication.",
+    text: "I've been using Eraseify for nearly 6 months, The quality is top-notch. My friend Myztic is an exceptional developer with incredible talent and dedication.",
     author: "Sarang S Warrier",
     image: profile_image_3,
     jobTitle: "Certified Lover Boy!",
