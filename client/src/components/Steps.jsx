@@ -1,45 +1,52 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { Upload, Wand2, Download } from "lucide-react";
 
 const Steps = () => {
+  const steps = [
+    {
+      icon: <Upload className="w-9 h-9 text-violet-600" />,
+      title: "Select Your Image",
+      description:
+        "Drop your image here or click to browse. Support for JPG, PNG and other common formats.",
+    },
+    {
+      icon: <Wand2 className="w-9 h-9 text-violet-600" />,
+      title: "AI Magic Happens",
+      description:
+        "Our advanced AI instantly detects and removes any background, leaving you with a perfect result.",
+    },
+    {
+      icon: <Download className="w-9 h-9 text-violet-600" />,
+      title: "Get Your Result",
+      description:
+        "Download your image in high resolution. Perfect for products, portraits, or any creative project.",
+    },
+  ];
+
   return (
     <div className="mx-4 lg:mx-44 py-20 xl:py-40">
-      <h1 className="text-center text-2xl md:text-3xl lg:text-4xl mt-4 font-semibold bg-gradient-to-r from-gray-900 to-gray-400 bg-clip-text text-transparent ">
-        Steps to remove background <br />
-        image in seconds
+      <h1 className="text-center text-2xl md:text-3xl lg:text-4xl mt-4 font-semibold bg-gradient-to-r from-violet-600 to-fuchsia-500 bg-clip-text text-transparent">
+        Transform your images in <br className="sm:hidden" />
+        three simple steps
       </h1>
 
-      <div className="flex items-start flex-wrap gap-4 mt-16 xl:mt-24 justify-center">
-        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded hover:scale-105 transition-all duration-500">
-          <img className="max-w-9" src={assets.upload_icon} alt="" />
-          <div>
-            <p className="text-xl font-medium">Upload Image</p>
-            <p className="text-sm text-neutral-500 mt-1">
-              Choose an image to upload and get started. <br /> Quick and simple
-              process.
-            </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 xl:mt-24">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-4 bg-white border border-gray-100 shadow-sm hover:shadow-md p-7 rounded-xl hover:scale-105 transition-all duration-500"
+          >
+            <div className="flex-shrink-0 p-2 bg-violet-50 rounded-lg">
+              {step.icon}
+            </div>
+            <div>
+              <p className="text-xl font-medium text-gray-800">{step.title}</p>
+              <p className="text-sm text-gray-500 mt-2 leading-relaxed">
+                {step.description}
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded hover:scale-105 transition-all duration-500">
-          <img className="max-w-9" src={assets.remove_bg_icon} alt="" />
-          <div>
-            <p className="text-xl font-medium">Remove background</p>
-            <p className="text-sm text-neutral-500 mt-1">
-              Our tool will remove the background. <br /> Clean and precise
-              results.
-            </p>
-          </div>
-        </div>
-        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded hover:scale-105 transition-all duration-500">
-          <img className="max-w-9" src={assets.download_icon} alt="" />
-          <div>
-            <p className="text-xl font-medium">Download image</p>
-            <p className="text-sm text-neutral-500 mt-1">
-              Download your processed image instantly. <br /> High-quality and
-              ready to use anywhere.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
