@@ -30,11 +30,10 @@ const Header = () => {
           </h1>
 
           <p className="mt-8 mb-10 text-[17px] text-gray-600 leading-relaxed max-w-[90%]">
-            Unleash the true focus of your images - no distractions, just
-            perfection.
-            <br className="max-sm:hidden" />
-            Remove backgrounds effortlessly and let your subjects shine with
-            clarity and precision.
+            Transform your photos instantly with our AI technology. Create
+            studio-quality images with perfect background removal in seconds.
+            Whether it's for your e-commerce products, social media, or
+            professional portfolio – achieve flawless results every time.
           </p>
 
           <div className="flex items-center gap-6">
