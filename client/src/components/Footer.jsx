@@ -11,7 +11,7 @@ const Footer = () => {
         <span className="text-xl font-semibold text-indigo-600">Eraseify</span>
       </Link>
       <p className="flex-1 border-l border-gray-400 pl-4 text-sm text-gray-500 max-sm:hidden">
-        Copyright @3comma | All right reserved.
+        Copyright @3comma | All rights reserved.
       </p>
       <div className="flex gap-1">
         <img width={40} src={assets.facebook_icon} alt="" />
